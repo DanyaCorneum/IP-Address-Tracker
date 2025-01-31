@@ -1,0 +1,28 @@
+:root {
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-dray: hsl(0, 0%, 59%);
+}
+* {
+  font-family: "Rubik", sans-serif;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button {
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
