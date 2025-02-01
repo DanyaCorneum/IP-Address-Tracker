@@ -1,0 +1,27 @@
+body {
+  background-color: cadetblue;
+}
+main {
+  position: relative;
+  text-align: center;
+  background-image: url("../images/pattern-bg-desktop.png");
+  height: 280px;
+}
+main h2 {
+  margin: 0;
+}
+
+.info {
+  background-color: white;
+  position: relative;
+  top: 58%;
+  margin: auto;
+  width: 700px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.info * {
+  margin: 30px;
+  margin-top: 30px;
+}

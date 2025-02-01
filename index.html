@@ -13,12 +13,39 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="src/images/icon-location.svg"
     />
     <link rel="stylesheet" href="src/styles/config.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
     <title>IP Address Tracker</title>
   </head>
   <body>
+    <main>
+      <h2>IP Address Tracker</h2>
+      <form>
+        <input type="text" name="input-ip" />
+        <button class="next">&#8250;</button>
+      </form>
+      <div class="info">
+        <div class="ip-addres">
+          <h3>IP address</h3>
+          <p>None</p>
+        </div>
+        <div class="location">
+          <h3>location</h3>
+          <p>None</p>
+        </div>
+        <div class="timezone">
+          <h3>Timezone</h3>
+          <p>None</p>
+        </div>
+        <div class="isp">
+          <h3>Isp</h3>
+          <p>None</p>
+        </div>
+      </div>
+    </main>
+    <div class="map"></div>
     <div style="text-align: center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
