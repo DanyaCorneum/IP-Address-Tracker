@@ -1,26 +1,62 @@
-body {
-  background-color: cadetblue;
-}
 main {
   position: relative;
+  background-size: cover;
   text-align: center;
   background-image: url("/images/pattern-bg-desktop.png");
-  height: 280px;
+  padding-top: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-main h2 {
-  margin: 0;
+@media screen and (min-width: 1100px) {
+  main {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
-.info {
-  background-color: white;
-  position: relative;
-  top: 58%;
-  margin: auto;
-  width: 700px;
-  border-radius: 20px;
+form {
   display: flex;
   justify-content: center;
 }
-.info * {
-  margin: 30px;
-  margin-top: 30px;
+.title {
+  padding-bottom: 1.5rem;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0;
+}
+.search-bar__input {
+  height: 3.5rem;
+  width: 100%;
+  max-width: 30rem;
+  color: var(--very-dark-gray);
+  font-size: 1rem;
+  padding-left: 1.5rem;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 5rem;
+}
+.search-bar__btn {
+  width: 100%;
+  max-width: 50px;
+  color: white;
+  height: 3.5rem;
+  background-color: var(--very-dark-gray);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 2rem;
+  transition: background-color 200ms ease-in-out;
+}
+.search-bar__btn:hover {
+  background-color: var(--dark-gray);
+}
+.info {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 2rem;
+  border-radius: 15px;
 }

@@ -1,6 +1,6 @@
 :root {
   --very-dark-gray: hsl(0, 0%, 17%);
-  --dark-dray: hsl(0, 0%, 59%);
+  --dark-gray: hsl(0, 0%, 59%);
 }
 * {
   font-family: "Rubik", sans-serif;
