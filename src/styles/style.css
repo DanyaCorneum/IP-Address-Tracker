@@ -4,13 +4,12 @@ body {
 main {
   position: relative;
   text-align: center;
-  background-image: url("../images/pattern-bg-desktop.png");
+  background-image: url("/images/pattern-bg-desktop.png");
   height: 280px;
 }
 main h2 {
   margin: 0;
 }
-
 .info {
   background-color: white;
   position: relative;
