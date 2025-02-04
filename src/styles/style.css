@@ -55,6 +55,7 @@
   border-radius: 15px;
   margin: 0 auto;
 }
+
 .info__block {
   padding: 1rem;
   border-right: 2px solid var(--dark-gray);
@@ -73,5 +74,18 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
-.footer {
+@media screen and (max-width: 1000px) {
+  .info__block {
+    padding: 0.5rem;
+    border-right: none;
+  }
+  .info {
+    position: absolute;
+    left: 1.5rem;
+    transform: translateY(-15%);
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% - 3rem);
+    max-width: 1000px;
+  }
 }
