@@ -13,13 +13,45 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="src/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="src/styles/config.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
     <title>IP Address Tracker</title>
   </head>
   <body>
-    <div style="text-align: center">
+    <div class="finder">
+      <h1 class="title">Ip Address Tracker</h1>
+      <form class="search-bar" action="">
+        <input
+          class="search-bar__input"
+          type="text"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-bar__button">&#8250</button>
+      </form>
+    </div>
+
+    <div class="info">
+      <div class="info__block" id="IP">
+        <div class="info-block__subtitle">IP adderss</div>
+        <div class="info-block__title">255.255.255.255</div>
+      </div>
+      <div class="info__block" id="location">
+        <div class="info-block__subtitle">Location</div>
+        <div class="info-block__title">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="info__block" id="timezone">
+        <div class="info-block__subtitle">Timezone</div>
+        <div class="info-block__title">Lorem ipsum dolor sit amet.</div>
+      </div>
+      <div class="info__block" id="isp">
+        <div class="info-block__subtitle">ISP</div>
+        <div class="info-block__title">Lorem ipsum dolor sit amet.</div>
+      </div>
+    </div>
+
+    <div class="footer" style="text-align: center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
