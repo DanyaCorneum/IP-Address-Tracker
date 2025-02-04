@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\"> IP-Address-Tracker</h1>",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "node -r dotenv/config src/app/index.js && parcel index.html --open",
     "build": "parcel build index.html out-dir=build"
   },
   "repository": {
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/DanyaCorneum/IP-Address-Tracker#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "find-config": "^1.0.0"
   }
 }
