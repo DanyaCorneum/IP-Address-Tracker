@@ -2,9 +2,9 @@
   "name": "ip-address-tracker",
   "version": "1.0.0",
   "description": "<h1 align=\"center\"> IP-Address-Tracker</h1>",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config src/app/index.js && parcel index.html --open",
+    "start": "parcel index.html --open && node -r dotenv/config src/app/index.js",
     "build": "parcel build index.html out-dir=build"
   },
   "repository": {
