@@ -2,7 +2,7 @@ import "dotenv/config";
 
 import { validationIP } from "./helpers";
 
-const apiKey = process.env.APIKEY;
+const apiKeyIP = process.env.APIKEY_IP;
 
 const ipInput = document.querySelector(".search-bar__input");
 const btn = document.querySelector(".search-bar__button");
@@ -29,7 +29,7 @@ async function getData(event) {
   event.preventDefault();
   if (validationIP(ipInput.value)) {
     const data = await fetch(
-      `https://geo.ipify.org/api/v2/country?apiKey=${apiKey}&ipAddress=${ipInput.value}`
+      `https://geo.ipify.org/api/v2/country,city?apiKey=${apiKeyIP}&ipAddress=${ipInput.value}`
     ).then((resp) => resp.json());
     console.log(data);
     drawData(data);
