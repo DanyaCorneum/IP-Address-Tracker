@@ -24,7 +24,7 @@ function drawData(data) {
 function getData(event) {
   event.preventDefault();
   if (validationIP(ipInput.value)) {
-    getAddress(ipInput.value).then(drawData);
+    getAddress(ipInput.value).then((data) => drawData(data));
   }
 }
 
