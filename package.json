@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open && node -r dotenv/config src/app/index.js",
-    "build": "parcel build index.html out-dir=build"
+    "build": "parcel build index.html out-dir=build",
+    "predeploy": "npm run build",
+    "deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,8 @@
   },
   "homepage": "https://github.com/DanyaCorneum/IP-Address-Tracker#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "vercel": "^41.0.2"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
